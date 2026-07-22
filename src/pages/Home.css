@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 
-.overlay {
+/* .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg,
@@ -25,7 +25,7 @@
             rgba(219, 215, 215, 0.58) 28%,
             rgba(226, 220, 220, 0.18) 58%,
             rgba(175, 167, 167, 0.02) 100%);
-}
+} */
 
 .hero-container {
     position: relative;
