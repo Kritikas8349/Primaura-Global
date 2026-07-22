@@ -34,8 +34,7 @@ FOOTER SECTION
   padding: 110px 0;
   overflow: hidden;
   background:
-    /* linear-gradient(rgba(249, 245, 232, 0.84), rgba(249, 245, 232, 0.84)), */
-    url("../assets/footer-bg.png");
+    /* linear-gradient(rgba(249, 245, 232, 0.84), rgba(249, 245, 232, 0.84)), */ url("../assets/footer-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1488,275 +1487,261 @@ ULTRA WIDE
 1200px
 =================================================== */
 
-@media(max-width:1200px){
+@media (max-width: 1200px) {
+  .footer-bottom-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px 40px;
+    gap: 35px;
+  }
 
-.footer-bottom-container{
-grid-template-columns:repeat(3,1fr);
-padding:60px 40px;
-gap:35px;
-}
+  .footer-brand {
+    max-width: 100%;
+  }
 
-.footer-brand{
-max-width:100%;
-}
-
-.footer-copyright{
-padding:20px 40px;
-}
-
+  .footer-copyright {
+    padding: 20px 40px;
+  }
 }
 
 /* ===================================================
 992px
 =================================================== */
 
-@media(max-width:992px){
+@media (max-width: 992px) {
+  .footer-bottom-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 55px 35px;
+  }
 
-.footer-bottom-container{
-grid-template-columns:repeat(2,1fr);
-gap:40px;
-padding:55px 35px;
-}
+  .footer-col h4 {
+    font-size: 24px;
+  }
 
-.footer-col h4{
-font-size:24px;
-}
+  .bottom-logo {
+    width: 150px;
+  }
 
-.bottom-logo{
-width:150px;
-}
+  .newsletter button {
+    width: 100%;
+  }
 
-.newsletter button{
-width:100%;
-}
+  .footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 35px;
+  }
 
-.footer-copyright{
-flex-direction:column;
-justify-content:center;
-text-align:center;
-gap:15px;
-padding:20px 35px;
-}
-
-.footer-policy{
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
+  .footer-policy {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 /* ===================================================
 768px
 =================================================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .footer-bottom-container {
+    grid-template-columns: 1fr;
+    padding: 50px 28px;
+    gap: 40px;
+    text-align: center;
+  }
 
-.footer-bottom-container{
-grid-template-columns:1fr;
-padding:50px 28px;
-gap:40px;
-text-align:center;
-}
+  .footer-brand {
+    margin: auto;
+  }
 
-.footer-brand{
-margin:auto;
-}
+  .social-links {
+    justify-content: center;
+  }
 
-.social-links{
-justify-content:center;
-}
+  .contact-info p {
+    justify-content: center;
+    text-align: center;
+  }
 
-.contact-info p{
-justify-content:center;
-text-align:center;
-}
+  .newsletter form {
+    max-width: 450px;
+    margin: auto;
+  }
 
-.newsletter form{
-max-width:450px;
-margin:auto;
-}
+  .footer-col ul {
+    padding: 0;
+  }
 
-.footer-col ul{
-padding:0;
-}
+  .footer-col ul li {
+    margin-bottom: 12px;
+  }
 
-.footer-col ul li{
-margin-bottom:12px;
-}
+  .footer-copyright {
+    padding: 18px 28px;
+  }
 
-.footer-copyright{
-padding:18px 28px;
-}
-
-.footer-policy{
-flex-direction:column;
-gap:12px;
-}
-
+  .footer-policy {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* ===================================================
 600px
 =================================================== */
 
-@media(max-width:600px){
+@media (max-width: 600px) {
+  .footer-bottom-container {
+    padding: 45px 22px;
+  }
 
-.footer-bottom-container{
-padding:45px 22px;
-}
+  .footer-col h4 {
+    font-size: 22px;
+  }
 
-.footer-col h4{
-font-size:22px;
-}
+  .footer-brand p,
+  .newsletter p,
+  .contact-info p,
+  .footer-col ul li a {
+    font-size: 14px;
+  }
 
-.footer-brand p,
-.newsletter p,
-.contact-info p,
-.footer-col ul li a{
-font-size:14px;
-}
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
 
-.social-links a{
-width:40px;
-height:40px;
-font-size:15px;
-}
+  .newsletter input {
+    height: 48px;
+  }
 
-.newsletter input{
-height:48px;
-}
-
-.newsletter button{
-height:48px;
-}
-
+  .newsletter button {
+    height: 48px;
+  }
 }
 
 /* ===================================================
 480px
 =================================================== */
 
-@media(max-width:480px){
+@media (max-width: 480px) {
+  .footer-bottom-container {
+    padding: 40px 18px;
+    gap: 35px;
+  }
 
-.footer-bottom-container{
-padding:40px 18px;
-gap:35px;
-}
+  .bottom-logo {
+    width: 135px;
+    margin: auto;
+    margin-bottom: 18px;
+  }
 
-.bottom-logo{
-width:135px;
-margin:auto;
-margin-bottom:18px;
-}
+  .footer-col h4 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
 
-.footer-col h4{
-font-size:21px;
-margin-bottom:18px;
-}
+  .footer-brand p {
+    line-height: 1.8;
+  }
 
-.footer-brand p{
-line-height:1.8;
-}
+  .footer-copyright {
+    padding: 16px 18px;
+  }
 
-.footer-copyright{
-padding:16px 18px;
-}
-
-.footer-copyright p,
-.footer-policy a{
-font-size:13px;
-}
-
+  .footer-copyright p,
+  .footer-policy a {
+    font-size: 13px;
+  }
 }
 
 /* ===================================================
 390px
 =================================================== */
 
-@media(max-width:390px){
+@media (max-width: 390px) {
+  .footer-bottom-container {
+    padding: 35px 15px;
+  }
 
-.footer-bottom-container{
-padding:35px 15px;
-}
+  .footer-col h4 {
+    font-size: 20px;
+  }
 
-.footer-col h4{
-font-size:20px;
-}
+  .social-links {
+    gap: 10px;
+  }
 
-.social-links{
-gap:10px;
-}
+  .social-links a {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
 
-.social-links a{
-width:38px;
-height:38px;
-font-size:14px;
-}
+  .newsletter input {
+    padding: 0 14px;
+    font-size: 13px;
+  }
 
-.newsletter input{
-padding:0 14px;
-font-size:13px;
-}
+  .newsletter button {
+    font-size: 13px;
+  }
 
-.newsletter button{
-font-size:13px;
-}
-
-.contact-info p{
-font-size:13px;
-}
-
+  .contact-info p {
+    font-size: 13px;
+  }
 }
 
 /* ===================================================
 320px
 =================================================== */
 
-@media(max-width:320px){
+@media (max-width: 320px) {
+  .footer-bottom-container {
+    padding: 30px 12px;
+  }
 
-.footer-bottom-container{
-padding:30px 12px;
-}
+  .bottom-logo {
+    width: 120px;
+  }
 
-.bottom-logo{
-width:120px;
-}
+  .footer-col h4 {
+    font-size: 18px;
+  }
 
-.footer-col h4{
-font-size:18px;
-}
+  .footer-brand p,
+  .newsletter p,
+  .contact-info p,
+  .footer-col ul li a {
+    font-size: 12px;
+  }
 
-.footer-brand p,
-.newsletter p,
-.contact-info p,
-.footer-col ul li a{
-font-size:12px;
-}
+  .social-links a {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
 
-.social-links a{
-width:34px;
-height:34px;
-font-size:13px;
-}
+  .newsletter input {
+    height: 44px;
+    font-size: 12px;
+  }
 
-.newsletter input{
-height:44px;
-font-size:12px;
-}
+  .newsletter button {
+    height: 44px;
+    font-size: 12px;
+  }
 
-.newsletter button{
-height:44px;
-font-size:12px;
-}
+  .footer-copyright {
+    padding: 14px 12px;
+  }
 
-.footer-copyright{
-padding:14px 12px;
-}
-
-.footer-copyright p,
-.footer-policy a{
-font-size:11px;
-}
-
+  .footer-copyright p,
+  .footer-policy a {
+    font-size: 11px;
+  }
 }
