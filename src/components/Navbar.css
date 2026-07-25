@@ -33,9 +33,9 @@ NAVBAR
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #FAF6F4;
   z-index: 99999;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   transition: 0.35s;
 }
