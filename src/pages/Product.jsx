@@ -1,101 +1,277 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
 
+import onionImg from "../assets/onionPowder.png";
+import garlicImg from "../assets/garlicPowder.png";
+import chilliImg from "../assets/chilliPowder.png";
+import turmericImg from "../assets/turmericPowder.png";
+
+
 import {
-  FaLeaf,
-  FaAward,
-  FaGlobeAsia,
-  FaHandshake,
+    FaLeaf,
+    FaAward,
+    FaGlobeAsia,
+    FaHandshake,
+    FaGlobe,
+    FaBoxes,
 } from "react-icons/fa";
 
+
+const products = [
+    {
+        id: 1,
+        name: "Onion",
+        title: "Onion Powder",
+        image: onionImg,
+
+        description:
+            "Our premium onion powder is manufactured from carefully selected onions and processed under hygienic conditions. It delivers a rich aroma, excellent flavor, and long shelf life, making it ideal for food processing, seasoning blends, ready-to-eat products, and international export markets.",
+
+        features: [
+            "100% Natural",
+            "Premium Quality",
+            "Export Grade",
+            "Hygienically Processed",
+        ],
+    },
+
+    {
+        id: 2,
+        name: "Garlic",
+        title: "Garlic Powder",
+        image: garlicImg,
+
+        description:
+            "Made from fresh garlic cloves, our garlic powder offers strong aroma, authentic taste, and superior purity. It is widely used in sauces, seasonings, snack foods, soups, and food manufacturing industries worldwide.",
+
+        features: [
+            "Rich Aroma",
+            "Fine Texture",
+            "Export Quality",
+            "Long Shelf Life",
+        ],
+    },
+
+    {
+        id: 3,
+        name: "Red Chilli",
+        title: "Red Chilli Powder",
+        image: chilliImg,
+
+        description:
+            "Our red chilli powder is produced using premium quality chillies to provide vibrant natural color, balanced pungency, and rich flavor. It is suitable for spice blends, processed foods, and global culinary applications.",
+
+        features: [
+            "Natural Color",
+            "High Pungency",
+            "Premium Grade",
+            "Quality Tested",
+        ],
+    },
+
+    {
+        id: 4,
+        name: "Turmeric",
+        title: "Turmeric Powder",
+        image: turmericImg,
+
+        description:
+            "Prepared from high-curcumin turmeric roots, our turmeric powder is known for its bright golden color, freshness, and purity. It is extensively used in food, nutraceutical, and pharmaceutical industries.",
+
+        features: [
+            "High Curcumin",
+            "Pure & Natural",
+            "Export Standard",
+            "Fresh Aroma",
+        ],
+    },
+];
+
 const Product = () => {
-  return (
-    <section className="newProductsHero">
+    const [activeProduct, setActiveProduct] = useState(products[0]);
 
-      <div className="newProductsOverlay"></div>
+    return (
+        <>
+            <section className="newProductsHero">
 
-      <div className="newProductsContainer">
+                <div className="newProductsOverlay"></div>
 
-        <div className="newProductsContent">
+                <div className="newProductsContainer">
 
-          <span className="newProductsSubtitle">
-            PRIMAURA GLOBAL
-          </span>
+                    <div className="newProductsContent">
 
-          <h1 className="newProductsHeading">
-            Our Products
-          </h1>
+                        <span className="newProductsSubtitle">
+                            PRIMAURA GLOBAL
+                        </span>
 
-          <p className="newProductsDescription">
-            Explore our premium range of Indian export products,
-            carefully sourced and processed to meet international
-            quality standards. From authentic spices and herbs to
-            pharmaceutical products, we deliver excellence with
-            every shipment worldwide.
-          </p>
+                        <h1 className="newProductsHeading">
+                            Our Products
+                        </h1>
 
-          <div className="newProductsFeatures">
+                        <p className="newProductsDescription">
+                            Explore our premium range of Indian export products,
+                            carefully sourced and processed to meet international
+                            quality standards. From authentic spices and herbs to
+                            pharmaceutical products, we deliver excellence with
+                            every shipment worldwide.
+                        </p>
 
-            <div className="newProductsFeatureCard">
-              <div className="newProductsFeatureIcon">
-                <FaLeaf />
-              </div>
+                        <div className="newProductsFeatures">
 
-              <h4>100% Natural</h4>
+                            <div className="newProductsFeatureCard">
+                                <div className="newProductsFeatureIcon">
+                                    <FaLeaf />
+                                </div>
 
-              <p>
-                Naturally sourced ingredients with
-                premium quality assurance.
-              </p>
-            </div>
+                                <h4>100% Natural</h4>
 
-            <div className="newProductsFeatureCard">
-              <div className="newProductsFeatureIcon">
-                <FaAward />
-              </div>
+                                <p>
+                                    Naturally sourced ingredients with
+                                    premium quality assurance.
+                                </p>
+                            </div>
 
-              <h4>Premium Quality</h4>
+                            <div className="newProductsFeatureCard">
+                                <div className="newProductsFeatureIcon">
+                                    <FaAward />
+                                </div>
 
-              <p>
-                Carefully processed following
-                international export standards.
-              </p>
-            </div>
+                                <h4>Premium Quality</h4>
 
-            <div className="newProductsFeatureCard">
-              <div className="newProductsFeatureIcon">
-                <FaGlobeAsia />
-              </div>
+                                <p>
+                                    Carefully processed following
+                                    international export standards.
+                                </p>
+                            </div>
 
-              <h4>Global Export</h4>
+                            <div className="newProductsFeatureCard">
+                                <div className="newProductsFeatureIcon">
+                                    <FaGlobeAsia />
+                                </div>
 
-              <p>
-                Supplying trusted products to
-                customers across the world.
-              </p>
-            </div>
+                                <h4>Global Export</h4>
 
-            <div className="newProductsFeatureCard">
-              <div className="newProductsFeatureIcon">
-                <FaHandshake />
-              </div>
+                                <p>
+                                    Supplying trusted products to
+                                    customers across the world.
+                                </p>
+                            </div>
 
-              <h4>Trusted Partner</h4>
+                            <div className="newProductsFeatureCard">
+                                <div className="newProductsFeatureIcon">
+                                    <FaHandshake />
+                                </div>
 
-              <p>
-                Reliable partnerships with
-                commitment and timely delivery.
-              </p>
-            </div>
+                                <h4>Trusted Partner</h4>
 
-          </div>
+                                <p>
+                                    Reliable partnerships with
+                                    commitment and timely delivery.
+                                </p>
+                            </div>
 
-        </div>
+                        </div>
 
-      </div>
+                    </div>
 
-    </section>
-  );
+                </div>
+
+            </section>
+
+            <section className="catalogSection">
+
+                <div className="catalogContainer">
+
+                    <span className="catalogSubtitle">
+                        PRIMAURA GLOBAL
+                    </span>
+
+                    <h2 className="catalogHeading">
+                        Our Product Catalog
+                    </h2>
+
+                    <div className="catalogDivider">
+                        <span></span>
+                        <FaLeaf />
+                        <span></span>
+                    </div>
+
+                    <div className="catalogTabs">
+
+                        {products.map((product) => (
+
+                            <button
+                                key={product.id}
+                                className={`catalogTab ${activeProduct.id === product.id
+                                        ? "activeTab"
+                                        : ""
+                                    }`}
+                                onClick={() => setActiveProduct(product)}
+                            >
+                                {product.name}
+                            </button>
+
+                        ))}
+
+                    </div>
+
+                    <div className="catalogCard">
+
+                        <div className="catalogImage">
+
+                            <img
+                                src={activeProduct.image}
+                                alt={activeProduct.title}
+                            />
+
+                        </div>
+
+                        <div className="catalogContent">
+
+                            <h3>
+                                {activeProduct.title}
+                            </h3>
+
+                            <p>
+                                {activeProduct.description}
+                            </p>
+                            <div className="catalogFeatureGrid">
+
+                                <div className="catalogFeature">
+                                    <FaLeaf className="featureIcon" />
+                                    <span>{activeProduct.features[0]}</span>
+                                </div>
+
+                                <div className="catalogFeature">
+                                    <FaAward className="featureIcon" />
+                                    <span>{activeProduct.features[1]}</span>
+                                </div>
+
+                                <div className="catalogFeature">
+                                    <FaGlobe className="featureIcon" />
+                                    <span>{activeProduct.features[2]}</span>
+                                </div>
+
+                                <div className="catalogFeature">
+                                    <FaBoxes className="featureIcon" />
+                                    <span>{activeProduct.features[3]}</span>
+                                </div>
+
+                            </div>
+
+                            <button className="catalogBtn">
+                                Send Inquiry
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </>
+    );
 };
 
 export default Product;
