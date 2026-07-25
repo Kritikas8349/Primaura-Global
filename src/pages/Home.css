@@ -1299,10 +1299,10 @@
 /* India */
 
 .india {
-    width: 3%;
-    height: 6%;
+    width: 7%;
+    height: 12%;
     left: 67%;
-    top: 46%;
+    top: 47%;
 }
 
 /* USA */
@@ -1344,10 +1344,10 @@
 /* Australia */
 
 .australia {
-    width: 9%;
-    height: 8%;
-    left: 81%;
-    top: 69%;
+    width: 13%;
+    height: 15%;
+    left: 79%;
+    top: 72%;
 }
 
 /* Europe */
@@ -1363,20 +1363,20 @@
 /* Africa */
 .africa {
     position: absolute;
-    width: 12%;
-    height: 18%;
-    left: 47%;
-    top: 32%;
+    width: 18%;
+    height: 38%;
+    left: 43%;
+    top: 43%;
     cursor: pointer;
 }
 
 /* Asia */
 .asia {
     position: absolute;
-    width: 22%;
-    height: 20%;
+    width: 32%;
+    height: 32%;
     left: 58%;
-    top: 18%;
+    top: 10%;
     cursor: pointer;
 }
 
@@ -1423,10 +1423,10 @@
 /* Brazil */
 .brazil {
     position: absolute;
-    width: 8%;
-    height: 12%;
-    left: 30%;
-    top: 48%;
+    width: 13%;
+    height: 35%;
+    left: 25%;
+    top: 58%;
     cursor: pointer;
 }
 

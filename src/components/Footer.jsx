@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import { FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const Footer = () => {
             <div className="footer-info">
               <div className="info-card">
                 <div className="info-icon">
-                  <i className="fa-solid fa-location-dot"></i>
+                  <FaLocationDot />
                 </div>
 
                 <div>
@@ -68,7 +69,7 @@ const Footer = () => {
 
               <div className="info-card">
                 <div className="info-icon">
-                  <i className="fa-solid fa-envelope"></i>
+                  <FaEnvelope />
                 </div>
 
                 <div>
@@ -79,7 +80,7 @@ const Footer = () => {
 
               <div className="info-card">
                 <div className="info-icon">
-                  <i className="fa-solid fa-phone"></i>
+                  <FaPhone />
                 </div>
 
                 <div>
@@ -87,7 +88,7 @@ const Footer = () => {
                   <p>+91 9876543210</p>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
 
           {/* RIGHT */}
