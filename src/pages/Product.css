@@ -250,7 +250,8 @@
     }
 
     .newProductsContainer{
-        padding:90px 35px;
+        /* padding:90px 35px; */
+        padding-top:20vh;   
     }
 
     .newProductsContent{
@@ -293,7 +294,8 @@
     }
 
     .newProductsContainer{
-        padding:70px 25px;
+        /* padding:70px 25px; */
+        padding-top:20vh;   
     }
 
     .newProductsSubtitle{
@@ -350,13 +352,15 @@
     } */
 
     .newProductsContainer{
-        padding:55px 18px 20px;
+        /* padding:55px 18px 20px; */
+        padding-top:20vh;   
     }
 
     .newProductsContent{
         max-width:100%;
         text-align:center;
-        margin:-180px auto 0;
+        margin:-280px auto 0;
+        /* margin-top: 20vh; */
 
     }
 
@@ -397,7 +401,8 @@
     }
 
     .newProductsContainer{
-        padding:45px 14px 20px;
+        /* padding:45px 14px 20px; */
+        padding-top:10vh;   
     }
 
     .newProductsSubtitle{
@@ -789,7 +794,7 @@
 }
 
 .catalogImage img{
-    max-width:260px;
+    max-width:360px;
 }
 
 .catalogContent h3{
@@ -842,7 +847,7 @@
 }
 
 .catalogImage img{
-    max-width:220px;
+    max-width:280px;
 }
 
 .catalogTab{
