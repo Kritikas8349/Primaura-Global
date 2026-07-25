@@ -1,18 +1,16 @@
 import "./Contact.css";
 import bgImage from "../assets/contact-bg.png"; // apni image ka path yaha de
 import mapImg from "../assets/map.png"; // apni image ka path yaha de
+import phoneIMG from "../assets/contact-bg-phone.png"; // apni image ka path yaha de
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 
 const Contact = () => {
   return (
     <>
-      <section className="contact-page">
-        <div
-          className="contact-banner"
-          style={{ backgroundImage: `url(${bgImage})` }}
-        >
+     <section className="contact-page">
+        <div className="contact-banner">
           <div className="contact-content">
-            <h1>Contact us</h1>
+            <h1>Contact Us</h1>
 
             <p>
               Home <span>/</span> Contact
@@ -30,7 +28,7 @@ const Contact = () => {
           {/* Left */}
 
           <div className="contact-map">
-              <img src={mapImg} alt="World Map" className="map-image" />
+            <img src={mapImg} alt="World Map" className="map-image" />
           </div>
 
           {/* Right */}
@@ -74,60 +72,34 @@ const Contact = () => {
     CONTACT FORM
 =========================== */}
 
-<section className="contact-form-section">
+      <section className="contact-form-section">
+        <div className="contact-form-container">
+          <span className="form-subtitle">Have Any Questions?</span>
 
-  <div className="contact-form-container">
+          <h2>Leave A Message</h2>
 
-    <span className="form-subtitle">
-      Have Any Questions?
-    </span>
+          <form className="contact-form">
+            <input type="text" placeholder="Full Name" />
 
-    <h2>
-      Leave A Message
-    </h2>
+            <input type="email" placeholder="Email" />
 
-    <form className="contact-form">
+            <div className="phone-input">
+              <select>
+                <option>Algeria (+213)</option>
+                <option>India (+91)</option>
+                <option>USA (+1)</option>
+                <option>UAE (+971)</option>
+              </select>
 
-      <input
-        type="text"
-        placeholder="Full Name"
-      />
+              <input type="tel" placeholder="Phone Number" />
+            </div>
 
-      <input
-        type="email"
-        placeholder="Email"
-      />
+            <textarea rows="6" placeholder="Your Message"></textarea>
 
-      <div className="phone-input">
-
-        <select>
-          <option>Algeria (+213)</option>
-          <option>India (+91)</option>
-          <option>USA (+1)</option>
-          <option>UAE (+971)</option>
-        </select>
-
-        <input
-          type="tel"
-          placeholder="Phone Number"
-        />
-
-      </div>
-
-      <textarea
-        rows="6"
-        placeholder="Your Message"
-      ></textarea>
-
-      <button type="submit">
-        Submit
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </>
   );
 };

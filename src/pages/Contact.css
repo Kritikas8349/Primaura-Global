@@ -11,6 +11,9 @@ body {
 /* ===========================
    CONTACT PAGE
 =========================== */
+/* ===========================
+   CONTACT PAGE
+=========================== */
 
 .contact-page {
   width: 100%;
@@ -27,6 +30,7 @@ body {
 
   border-radius: 35px;
 
+  background-image: url("../assets/contact-bg.png"); /* Desktop Image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,103 +68,123 @@ body {
    Large Laptop
 =========================== */
 
-@media (max-width: 1200px) {
-  .contact-banner {
-    min-height: 230px;
-  }
+@media (max-width:1200px){
 
-  .contact-content h1 {
-    font-size: 48px;
-  }
+.contact-banner{
+    min-height:230px;
+}
+
+.contact-content h1{
+    font-size:48px;
+}
+
 }
 
 /* ===========================
    Laptop
 =========================== */
 
-@media (max-width: 992px) {
-  .contact-page {
-    padding: 30px 18px;
-  }
+@media (max-width:992px){
 
-  .contact-banner {
-    min-height: 200px;
-    border-radius: 28px;
-  }
+.contact-page{
+    padding:30px 18px;
+}
 
-  .contact-content h1 {
-    font-size: 40px;
-  }
+.contact-banner{
+    min-height:200px;
+    border-radius:28px;
+}
 
-  .contact-content p {
-    font-size: 16px;
-  }
+.contact-content h1{
+    font-size:40px;
+}
+
+.contact-content p{
+    font-size:16px;
+}
+
 }
 
 /* ===========================
    Tablet
 =========================== */
 
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 25px 15px;
-  }
+@media (max-width:768px){
 
-  .contact-banner {
-    min-height: 170px;
-    border-radius: 22px;
-  }
+.contact-page{
+    padding:25px 15px;
+}
 
-  .contact-content h1 {
-    font-size: 34px;
-    margin-bottom: 8px;
-  }
+.contact-banner{
+    min-height:170px;
+    border-radius:22px;
+}
 
-  .contact-content p {
-    font-size: 15px;
-  }
+.contact-content h1{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.contact-content p{
+    font-size:15px;
+}
+
 }
 
 /* ===========================
    Mobile
 =========================== */
 
-@media (max-width: 576px) {
-  .contact-page {
-    padding: 20px 12px;
-  }
+@media (max-width:576px){
 
-  .contact-banner {
-    min-height: 145px;
-    border-radius: 18px;
-  }
+.contact-page{
+    padding:20px 12px;
+}
 
-  .contact-content h1 {
-    font-size: 28px;
-  }
+.contact-banner{
+    min-height:350px;
+    border-radius:10px;
+    /* Mobile Background */
+    background-image:url("../assets/contact-bg-phone.png");
 
-  .contact-content p {
-    font-size: 14px;
-  }
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.contact-content h1{
+    font-size:28px;
+}
+
+.contact-content p{
+    font-size:14px;
+}
+
 }
 
 /* ===========================
    Small Mobile
 =========================== */
 
-@media (max-width: 400px) {
-  .contact-banner {
-    min-height: 130px;
-    border-radius: 15px;
-  }
+@media (max-width:400px){
 
-  .contact-content h1 {
-    font-size: 24px;
-  }
+.contact-banner{
+    min-height:400px;
+    border-radius:25px;
 
-  .contact-content p {
-    font-size: 13px;
-  }
+    background-image:url("../assets/contact-bg-phone.png");
+    background-size:cover;
+    background-position:center;
+}
+
+.contact-content h1{
+    font-size:24px;
+}
+
+.contact-content p{
+    font-size:13px;
+}
+
 }
 
 /* ===========================
@@ -193,7 +217,7 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    /* box-shadow:0 8px 30px rgba(0,0,0,.08); */
     margin:10px;
 }
 
@@ -283,7 +307,7 @@ body {
   font-family: Poppins, sans-serif;
   margin-bottom: 10px;
   /* padding-left: 140px; */
-  
+  align-items: center;
 }
 
 .contact-info h2 {
@@ -326,7 +350,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); */
 
   flex-shrink: 0;
 }
