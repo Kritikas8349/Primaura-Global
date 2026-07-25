@@ -240,9 +240,7 @@
 
 }
 
-/* ============================= */
-/* Tablet */
-/* ============================= */
+
 
 @media (max-width:992px){
 
@@ -421,6 +419,8 @@
 
 
 
+
+
 .catalogSection{
     width:100%;
     padding:90px 7%;
@@ -445,9 +445,9 @@
 
 .catalogHeading{
     text-align:center;
-    font-size:42px;
-    color:#16324F;
-    font-weight:700;
+    font-size:48px;
+    color:#000;
+    font-weight:500;
     margin-bottom:18px;
 }
 
@@ -488,14 +488,13 @@
     padding:14px 34px;
     border-radius:50px;
     cursor:pointer;
-    transition:.35s;
+    /* transition:.35s; */
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .catalogTab:hover{
     background:#D39A2D;
     color:#fff;
-    transform:translateY(-4px);
 }
 
 .activeTab{
@@ -533,12 +532,12 @@
 .catalogContent h3{
     font-size:40px;
     color:#16324F;
-    margin-bottom:24px;
+    margin-bottom:8px;
 }
 
 .catalogContent p{
     font-size:17px;
-    line-height:1.9;
+    line-height:1.4;
     color:#666;
     margin-bottom:40px;
 }
@@ -547,7 +546,7 @@
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:20px;
-    margin-bottom:45px;
+    margin-bottom: 40px;
 }
 
 .catalogFeature{
@@ -555,20 +554,20 @@
     align-items:center;
     gap:16px;
     background:#f8f8f8;
-    padding:18px 22px;
+    padding:12px 22px;
     border-radius:14px;
     transition:.3s;
 }
 
 .catalogFeature:hover{
-    background:#16324F;
-    color:#fff;
+    background:#F8EFE2;
+    color:#000;
     transform:translateY(-4px);
 }
 
 .featureIcon{
-    width:48px;
-    height:48px;
+    width:38px;
+    height:38px;
     border-radius:50%;
     background:#D39A2D;
     color:#fff;
@@ -589,16 +588,18 @@
     padding:16px 38px;
     border:none;
     border-radius:50px;
-    background:#16324F;
-    color:#fff;
+    background:#fff;
+    color:#D39A2D;
     font-size:16px;
     font-weight:600;
     cursor:pointer;
     transition:.35s;
+    border: 2px solid #D39A2D;
 }
 
 .catalogBtn:hover{
     background:#D39A2D;
+    color: #fff;
     transform:translateY(-3px);
 }
 
