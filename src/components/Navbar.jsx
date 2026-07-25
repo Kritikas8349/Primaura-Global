@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import logo from "../assets/logo.png";
@@ -6,52 +7,82 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = ["Home", "Products", "About us", "Contact us"];
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Products", path: "/products" },
+    { name: "About us", path: "/about" },
+    { name: "Contact us", path: "/contact" },
+  ];
 
   return (
     <header className="navbar">
       <div className="navbar-container">
+
         {/* Mobile Menu Button */}
-        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
 
         {/* Logo */}
-
         <div className="logo">
-          <img src={logo} alt="PrimAura Logo" className="logo-img" />
+          <NavLink to="/">
+            <img
+              src={logo}
+              alt="PrimAura Logo"
+              className="logo-img"
+            />
+          </NavLink>
         </div>
-        {/* Desktop Menu */}
 
+        {/* Desktop Menu */}
         <ul className="nav-links">
           {navLinks.map((item, index) => (
             <li key={index}>
-              <a href="/">{item}</a>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : ""
+                }
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
 
         {/* Button */}
-
-        <button className="contact-btn">
+        <NavLink to="/contact" className="contact-btn">
           GET IN TOUCH
           <FiArrowRight />
-        </button>
+        </NavLink>
       </div>
 
       {/* Mobile Menu */}
-
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
         {navLinks.map((item, index) => (
-          <a href="/" key={index} onClick={() => setMenuOpen(false)}>
-            {item}
-          </a>
+          <NavLink
+            key={index}
+            to={item.path}
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              isActive ? "active-link" : ""
+            }
+          >
+            {item.name}
+          </NavLink>
         ))}
 
-        <button className="mobile-btn">
+        <NavLink
+          to="/contact"
+          className="mobile-btn"
+          onClick={() => setMenuOpen(false)}
+        >
           GET IN TOUCH
           <FiArrowRight />
-        </button>
+        </NavLink>
       </div>
     </header>
   );

@@ -1,77 +1,91 @@
 import React from "react";
 import "./Product.css";
+
 import {
-    FaLeaf,
-    FaAward,
-    FaGlobeAsia,
-    FaHandshake
-  } from "react-icons/fa";
+  FaLeaf,
+  FaAward,
+  FaGlobeAsia,
+  FaHandshake,
+} from "react-icons/fa";
 
 const Product = () => {
   return (
-    <section className="product-hero">
+    <section className="newProductsHero">
 
-      <div className="product-overlay"></div>
+      <div className="newProductsOverlay"></div>
 
-      <div className="product-container">
+      <div className="newProductsContainer">
 
-        <div className="product-left">
+        <div className="newProductsContent">
 
-          <span className="product-tag">
-            PRIMAURA
+          <span className="newProductsSubtitle">
+            PRIMAURA GLOBAL
           </span>
 
-          <h1 className="product-heading">
-            Our
-            <br />
-            Products
+          <h1 className="newProductsHeading">
+            Our Products
           </h1>
 
-          <div className="heading-line">
-            <span></span>
-            <i className="fa-solid fa-seedling"></i>
-            <span></span>
-          </div>
-
-          <p className="product-text">
-            Discover premium quality Indian products carefully sourced,
-            processed and exported to international markets. We ensure
-            exceptional quality, authenticity and reliability for every
-            shipment across the globe.
+          <p className="newProductsDescription">
+            Explore our premium range of Indian export products,
+            carefully sourced and processed to meet international
+            quality standards. From authentic spices and herbs to
+            pharmaceutical products, we deliver excellence with
+            every shipment worldwide.
           </p>
 
-          <div className="product-features">
+          <div className="newProductsFeatures">
 
-            <div className="feature-box">
-              <div className="feature-icon">
-                <i className="fa-solid fa-leaf"></i>
+            <div className="newProductsFeatureCard">
+              <div className="newProductsFeatureIcon">
+                <FaLeaf />
               </div>
 
-              <span>100% Natural</span>
+              <h4>100% Natural</h4>
+
+              <p>
+                Naturally sourced ingredients with
+                premium quality assurance.
+              </p>
             </div>
 
-            <div className="feature-box">
-              <div className="feature-icon">
-                <i className="fa-solid fa-award"></i>
+            <div className="newProductsFeatureCard">
+              <div className="newProductsFeatureIcon">
+                <FaAward />
               </div>
 
-              <span>Premium Quality</span>
+              <h4>Premium Quality</h4>
+
+              <p>
+                Carefully processed following
+                international export standards.
+              </p>
             </div>
 
-            <div className="feature-box">
-              <div className="feature-icon">
-                <i className="fa-solid fa-earth-americas"></i>
+            <div className="newProductsFeatureCard">
+              <div className="newProductsFeatureIcon">
+                <FaGlobeAsia />
               </div>
 
-              <span>Global Export</span>
+              <h4>Global Export</h4>
+
+              <p>
+                Supplying trusted products to
+                customers across the world.
+              </p>
             </div>
 
-            <div className="feature-box">
-              <div className="feature-icon">
-                <i className="fa-solid fa-handshake"></i>
+            <div className="newProductsFeatureCard">
+              <div className="newProductsFeatureIcon">
+                <FaHandshake />
               </div>
 
-              <span>Trusted Partner</span>
+              <h4>Trusted Partner</h4>
+
+              <p>
+                Reliable partnerships with
+                commitment and timely delivery.
+              </p>
             </div>
 
           </div>

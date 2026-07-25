@@ -68,8 +68,8 @@ LOGO
 }
 
 .logo-img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 90%;
   object-fit: contain;
   display: block;
 }
@@ -145,6 +145,7 @@ BUTTON
   font-weight: 600;
   cursor: pointer;
   transition: 0.35s;
+  text-decoration: none;
   flex-shrink: 0;
 }
 
