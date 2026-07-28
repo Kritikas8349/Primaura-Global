@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
