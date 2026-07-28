@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import onion from "../assets/onion.png";
 import garlic from "../assets/garlic.png";

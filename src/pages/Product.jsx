@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Product.css";
+import InquiryPopup from "../components/InquiryPopup";
 
 import onionImg from "../assets/onionPowder.png";
 import garlicImg from "../assets/garlicPowder.png";
