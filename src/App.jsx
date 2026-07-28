@@ -5,10 +5,13 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

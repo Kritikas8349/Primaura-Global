@@ -1,0 +1,255 @@
+/* ===========================
+   POPUP OVERLAY
+=========================== */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    z-index: 999999;
+    animation: fadeIn .3s ease;
+  }
+  
+  /* ===========================
+     POPUP BOX
+  =========================== */
+  
+  .popup-container {
+    position: relative;
+  
+    width: 92%;
+    max-width: 430px;
+    max-height: 90vh;
+    overflow-y: auto;
+  
+    background: #fffaf2;
+    border: 2px solid #d2b06c;
+    border-radius: 18px;
+  
+    padding: 22px;
+  
+    box-shadow: 0 25px 60px rgba(0,0,0,.28);
+  
+    animation: popup .35s ease;
+  }
+  
+  /* ===========================
+     HEADING
+  =========================== */
+  
+  .popup-container h2{
+    margin:0;
+    text-align:center;
+    color:#8c6532;
+    font-size:28px;
+    font-weight:700;
+  }
+  
+  .subtitle{
+    margin:10px 0 20px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+  }
+  
+  /* ===========================
+     CLOSE BUTTON
+  =========================== */
+  
+  .close-btn{
+    position:absolute;
+    top:14px;
+    right:14px;
+  
+    width:34px;
+    height:34px;
+  
+    border:none;
+    border-radius:50%;
+  
+    background:#c89a42;
+    color:#fff;
+  
+    font-size:20px;
+    cursor:pointer;
+  
+    transition:.3s;
+  }
+  
+  .close-btn:hover{
+    background:#9f7332;
+    transform:rotate(90deg);
+  }
+  
+  /* ===========================
+     FORM
+  =========================== */
+  
+  form{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  
+  input,
+  textarea{
+    width:100%;
+    box-sizing:border-box;
+  
+    border:1.5px solid #e2c58d;
+    border-radius:8px;
+  
+    padding:13px 15px;
+  
+    background:#fff;
+  
+    font-size:14px;
+    font-family:inherit;
+  
+    outline:none;
+  
+    transition:.3s;
+  }
+  
+  input{
+    height:46px;
+  }
+  
+  textarea{
+    height:95px;
+    resize:none;
+  }
+  
+  input:focus,
+  textarea:focus{
+    border-color:#c89a42;
+    box-shadow:0 0 0 3px rgba(200,154,66,.18);
+  }
+  
+  input::placeholder,
+  textarea::placeholder{
+    color:#999;
+  }
+  
+  /* ===========================
+     SUBMIT BUTTON
+  =========================== */
+  
+  .submit-btn{
+    width:100%;
+    height:48px;
+  
+    border:none;
+    border-radius:8px;
+  
+    background:#c7903d;
+    color:#fff;
+  
+    font-size:16px;
+    font-weight:600;
+  
+    cursor:pointer;
+    transition:.3s;
+  }
+  
+  .submit-btn:hover{
+    background:#9f7332;
+    transform:translateY(-2px);
+  }
+  
+  .submit-btn:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+  }
+  
+  /* ===========================
+     SCROLLBAR
+  =========================== */
+  
+  .popup-container::-webkit-scrollbar{
+    width:6px;
+  }
+  
+  .popup-container::-webkit-scrollbar-thumb{
+    background:#c7903d;
+    border-radius:20px;
+  }
+  
+  /* ===========================
+     ANIMATIONS
+  =========================== */
+  
+  @keyframes popup{
+  
+    from{
+      opacity:0;
+      transform:translateY(-30px) scale(.95);
+    }
+  
+    to{
+      opacity:1;
+      transform:translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes fadeIn{
+  
+    from{
+      opacity:0;
+    }
+  
+    to{
+      opacity:1;
+    }
+  }
+  
+  /* ===========================
+     MOBILE
+  =========================== */
+  
+  @media (max-width:768px){
+  
+    .popup-container{
+      width:94%;
+      padding:18px;
+    }
+  
+    .popup-container h2{
+      font-size:24px;
+    }
+  
+    .subtitle{
+      font-size:13px;
+      margin-bottom:16px;
+    }
+  
+    input{
+      height:42px;
+    }
+  
+    textarea{
+      height:80px;
+    }
+  
+    .submit-btn{
+      height:44px;
+      font-size:15px;
+    }
+  
+    .close-btn{
+      width:30px;
+      height:30px;
+      font-size:18px;
+    }
+  }

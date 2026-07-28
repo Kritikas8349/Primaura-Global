@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import logo from "../assets/logo.png";
+import InquiryPopup from "../components/InquiryPopup";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showInquiryPopup, setShowInquiryPopup] = useState(false);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -54,10 +56,13 @@ const Navbar = () => {
         </ul>
 
         {/* Button */}
-        <NavLink to="/contact" className="contact-btn">
-          GET IN TOUCH
-          <FiArrowRight />
-        </NavLink>
+        <button
+  className="contact-btn"
+  onClick={() => setShowInquiryPopup(true)}
+>
+  GET IN TOUCH
+  <FiArrowRight />
+</button>
       </div>
 
       {/* Mobile Menu */}
@@ -75,15 +80,22 @@ const Navbar = () => {
           </NavLink>
         ))}
 
-        <NavLink
-          to="/contact"
-          className="mobile-btn"
-          onClick={() => setMenuOpen(false)}
-        >
-          GET IN TOUCH
-          <FiArrowRight />
-        </NavLink>
+<button
+  className="mobile-btn"
+  onClick={() => {
+    setMenuOpen(false);
+    setShowInquiryPopup(true);
+  }}
+>
+  GET IN TOUCH
+  <FiArrowRight />
+</button>
       </div>
+
+      <InquiryPopup
+  isOpen={showInquiryPopup}
+  onClose={() => setShowInquiryPopup(false)}
+/>
     </header>
   );
 };

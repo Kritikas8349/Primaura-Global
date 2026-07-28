@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Product.css";
+import InquiryPopup from "../components/InquiryPopup";
 
 import onionImg from "../assets/onionPowder.png";
 import garlicImg from "../assets/garlicPowder.png";
@@ -88,6 +89,7 @@ const products = [
 ];
 
 const Product = () => {
+    const [showInquiryPopup, setShowInquiryPopup] = useState(false);
     const [activeProduct, setActiveProduct] = useState(products[0]);
 
     return (
@@ -259,9 +261,12 @@ const Product = () => {
 
                             </div>
 
-                            <button className="catalogBtn">
-                                Send Inquiry
-                            </button>
+                            <button
+  className="catalogBtn"
+  onClick={() => setShowInquiryPopup(true)}
+>
+  Send Inquiry
+</button>
 
                         </div>
 
@@ -270,6 +275,11 @@ const Product = () => {
                 </div>
 
             </section>
+
+            <InquiryPopup
+  isOpen={showInquiryPopup}
+  onClose={() => setShowInquiryPopup(false)}
+/>
         </>
     );
 };
