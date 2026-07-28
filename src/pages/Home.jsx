@@ -186,9 +186,17 @@ const Home = () => {
             </p>
 
             <div className="hero-buttons">
-              <button className="primary-btn">Explore Products</button>
+              <Link to="/products">
+                <button className="primary-btn">
+                  Explore Products
+                </button>
+              </Link>
 
-              <button className="secondary-btn">Contact Us</button>
+              <Link to="/contact">
+                <button className="secondary-btn">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>
