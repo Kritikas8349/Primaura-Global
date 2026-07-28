@@ -17,23 +17,15 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-container">
-
         {/* Mobile Menu Button */}
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
 
         {/* Logo */}
         <div className="logo">
           <NavLink to="/">
-            <img
-              src={logo}
-              alt="PrimAura Logo"
-              className="logo-img"
-            />
+            <img src={logo} alt="PrimAura Logo" className="logo-img" />
           </NavLink>
         </div>
 
@@ -43,9 +35,7 @@ const Navbar = () => {
             <li key={index}>
               <NavLink
                 to={item.path}
-                className={({ isActive }) =>
-                  isActive ? "active-link" : ""
-                }
+                className={({ isActive }) => (isActive ? "active-link" : "")}
               >
                 {item.name}
               </NavLink>
@@ -67,9 +57,7 @@ const Navbar = () => {
             key={index}
             to={item.path}
             onClick={() => setMenuOpen(false)}
-            className={({ isActive }) =>
-              isActive ? "active-link" : ""
-            }
+            className={({ isActive }) => (isActive ? "active-link" : "")}
           >
             {item.name}
           </NavLink>

@@ -58,17 +58,6 @@ const Footer = () => {
             <div className="footer-info">
               <div className="info-card">
                 <div className="info-icon">
-                  <FaLocationDot />
-                </div>
-
-                <div>
-                  <h5>Office</h5>
-                  <p>India</p>
-                </div>
-              </div>
-
-              <div className="info-card">
-                <div className="info-icon">
                   <FaEnvelope />
                 </div>
 
@@ -88,7 +77,7 @@ const Footer = () => {
                   <p>+91 9876543210</p>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
 
           {/* RIGHT */}
@@ -204,34 +193,6 @@ BOTTOM FOOTER
           </div>
 
           {/* Products */}
-
-          <div className="footer-col">
-            <h4>Our Products</h4>
-
-            <ul>
-              <li>
-                <a href="/">Essential Oils</a>
-              </li>
-              <li>
-                <a href="/">Grains</a>
-              </li>
-              <li>
-                <a href="/">Spices</a>
-              </li>
-              <li>
-                <a href="/">Makhana</a>
-              </li>
-              <li>
-                <a href="/">Mango Pulp</a>
-              </li>
-              <li>
-                <a href="/">Tissue Paper</a>
-              </li>
-              <li>
-                <a href="/">Healthy Snacks</a>
-              </li>
-            </ul>
-          </div>
 
           {/* Newsletter */}
 

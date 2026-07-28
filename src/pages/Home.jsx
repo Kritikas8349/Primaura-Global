@@ -27,7 +27,6 @@ import reliable from "../assets/reliable.png";
 import exportGlobal from "../assets/exportGlobal.png";
 import international from "../assets/international.png";
 
-
 const products = [
   {
     id: 1,
@@ -58,7 +57,6 @@ const products = [
       "Natural turmeric powder with high curcumin content, vibrant color and exceptional purity.",
   },
 ];
-
 
 //why choose us
 const features = [
@@ -117,8 +115,7 @@ const testimonials = [
     title: "Reliable. Professional. Consistent.",
     review:
       "Primaura Global combines premium product quality with exceptional service. Their team is responsive, dependable, and committed to delivering every order on time. Their dedication to maintaining international standards makes them a valuable partner for our business.",
-    author:
-      "UK – James Wilson, Import Manager, London Food Supplies Ltd.",
+    author: "UK – James Wilson, Import Manager, London Food Supplies Ltd.",
   },
 ];
 
@@ -142,8 +139,6 @@ const countries = [
   "UAE",
 ];
 
-
-
 const Home = () => {
   const [current, setCurrent] = useState(0);
 
@@ -152,11 +147,8 @@ const Home = () => {
   };
 
   const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
-
 
   const [country, setCountry] = useState("");
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -173,9 +165,7 @@ const Home = () => {
         <div className="overlay"></div>
 
         <div className="hero-container">
-
           <div className="hero-content">
-
             <span className="hero-tag">
               Rooted in india. Reaching the world.
             </span>
@@ -189,62 +179,46 @@ const Home = () => {
             </h1>
 
             <p className="hero-description">
-              Primaura Global is a merchant exporter committed to delivering high-quality
-              Indian products to international markets across multiple industries.
+              Primaura Global is a merchant exporter committed to delivering
+              high-quality Indian products to international markets across
+              multiple industries.
             </p>
 
             <div className="hero-buttons">
-              <button className="primary-btn">
-                Explore Products
-              </button>
+              <button className="primary-btn">Explore Products</button>
 
-              <button className="secondary-btn">
-                Contact Us
-              </button>
+              <button className="secondary-btn">Contact Us</button>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section className="products">
-
         <div className="section-title">
-
           <span>PRIMAURA</span>
 
           <h2>Our Products</h2>
-
         </div>
 
         <div className="products-grid">
-
           {products.map((item) => (
             <div className="product-card" key={item.id}>
-
               <div className="product-image">
                 <img src={item.image} alt={item.title} />
               </div>
 
               <div className="product-content">
-
                 <h3>{item.title}</h3>
 
                 <p>{item.description}</p>
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </section>
 
       <section className="whyChoose">
         <div className="container">
-
           <div className="sectionHeading">
             <h2>Why Choose Primaura Global?</h2>
 
@@ -269,24 +243,15 @@ const Home = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="heroBanner">
         <div className="bannerContainer">
-
           <picture>
-            <source
-              media="(max-width:768px)"
-              srcSet={banner1}
-            />
+            <source media="(max-width:768px)" srcSet={banner1} />
 
-            <img
-              src={banner}
-              alt="Primaura Banner"
-              className="bannerImage"
-            />
+            <img src={banner} alt="Primaura Banner" className="bannerImage" />
           </picture>
 
           <div className="bannerContent">
@@ -294,18 +259,17 @@ const Home = () => {
 
             <p>
               Primaura Global Private Limited is a trusted merchant exporter
-              specializing in premium-quality dehydrated ingredients, spices, and
-              food products. We collaborate with reliable manufacturers to deliver
-              products that meet international quality standards, ensuring
-              consistency, authenticity, and excellence for customers worldwide.
+              specializing in premium-quality dehydrated ingredients, spices,
+              and food products. We collaborate with reliable manufacturers to
+              deliver products that meet international quality standards,
+              ensuring consistency, authenticity, and excellence for customers
+              worldwide.
             </p>
           </div>
-
         </div>
       </section>
 
       <section className="testimonials">
-
         <h2>Trusted by Global Partners</h2>
 
         <p className="subHeading">
@@ -315,18 +279,12 @@ const Home = () => {
         </p>
 
         <div className="testimonialWrapper">
-
           <button className="arrow left" onClick={prevSlide}>
             <FaArrowLeft />
           </button>
 
           <div className="testimonialCard">
-
-            <img
-              src={testimonials[current].country}
-              alt=""
-              className="flag"
-            />
+            <img src={testimonials[current].country} alt="" className="flag" />
 
             <div className="stars">
               {[...Array(5)].map((_, i) => (
@@ -336,35 +294,22 @@ const Home = () => {
 
             <h3>{testimonials[current].title}</h3>
 
-            <p className="review">
-              {testimonials[current].review}
-            </p>
+            <p className="review">{testimonials[current].review}</p>
 
             <span>{testimonials[current].author}</span>
-
           </div>
 
           <button className="arrow right" onClick={nextSlide}>
             <FaArrowRight />
           </button>
-
         </div>
-
       </section>
 
       <section className="partners-section">
-
         <h2>Trusted by Global Partners</h2>
 
-        <div
-          className="map-wrapper"
-          onMouseMove={handleMove}
-        >
-          <img
-            src={map}
-            alt="World Map"
-            className="world-map"
-          />
+        <div className="map-wrapper" onMouseMove={handleMove}>
+          <img src={map} alt="World Map" className="world-map" />
 
           {/* Demo Hotspots */}
           <div
@@ -467,27 +412,23 @@ const Home = () => {
         <p className="note">
           Hover your mouse over the map to know the country name.
         </p>
-
       </section>
-
 
       <section className="last-section">
         <div className="last-section-container">
-
           <div className="last-section-heading">
             <h2>Why the World Chooses Indian Products</h2>
 
             <p>
               India has earned a strong reputation as one of the world's leading
-              sourcing hubs for premium agricultural products, spices, herbs, and
-              food ingredients. With abundant natural resources, skilled producers,
-              and internationally compliant manufacturing, India continues to be the
-              preferred choice for global importers.
+              sourcing hubs for premium agricultural products, spices, herbs,
+              and food ingredients. With abundant natural resources, skilled
+              producers, and internationally compliant manufacturing, India
+              continues to be the preferred choice for global importers.
             </p>
           </div>
 
           <div className="last-section-grid">
-
             <div className="last-section-card">
               <div className="last-section-icon">
                 <img src={richAgri} alt="Agriculture" />
@@ -497,9 +438,9 @@ const Home = () => {
                 <h3>Rich Agricultural Heritage</h3>
 
                 <p>
-                  India's diverse climate and fertile lands produce a wide variety of
-                  high-quality spices, fruits, and agricultural products renowned for
-                  their authenticity and natural goodness.
+                  India's diverse climate and fertile lands produce a wide
+                  variety of high-quality spices, fruits, and agricultural
+                  products renowned for their authenticity and natural goodness.
                 </p>
               </div>
             </div>
@@ -513,9 +454,9 @@ const Home = () => {
                 <h3>Global Export Excellence</h3>
 
                 <p>
-                  As one of the world's largest exporters of food ingredients and
-                  spices, India consistently supplies international markets with
-                  products that meet global quality standards.
+                  As one of the world's largest exporters of food ingredients
+                  and spices, India consistently supplies international markets
+                  with products that meet global quality standards.
                 </p>
               </div>
             </div>
@@ -529,9 +470,9 @@ const Home = () => {
                 <h3>International Compliance</h3>
 
                 <p>
-                  Indian manufacturers follow strict food safety regulations, quality
-                  certifications, and export guidelines, ensuring products are ready
-                  for global distribution.
+                  Indian manufacturers follow strict food safety regulations,
+                  quality certifications, and export guidelines, ensuring
+                  products are ready for global distribution.
                 </p>
               </div>
             </div>
@@ -546,14 +487,12 @@ const Home = () => {
 
                 <p>
                   With world-class ports, advanced logistics infrastructure, and
-                  efficient export systems, India enables smooth and timely deliveries
-                  to customers across the globe.
+                  efficient export systems, India enables smooth and timely
+                  deliveries to customers across the globe.
                 </p>
               </div>
             </div>
-
           </div>
-
         </div>
       </section>
     </>

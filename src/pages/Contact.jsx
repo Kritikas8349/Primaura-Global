@@ -7,7 +7,7 @@ import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 const Contact = () => {
   return (
     <>
-     <section className="contact-page">
+      <section className="contact-page">
         <div className="contact-banner">
           <div className="contact-content">
             <h1>Contact Us</h1>

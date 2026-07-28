@@ -33,7 +33,7 @@ NAVBAR
   top: 0;
   left: 0;
   width: 100%;
-  background: #FAF6F4;
+  background: #faf6f4;
   z-index: 99999;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -44,7 +44,7 @@ NAVBAR
   width: 100%;
   max-width: 1450px;
   margin: auto;
-  height: 90px ;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
