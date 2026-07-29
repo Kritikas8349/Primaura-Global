@@ -88,6 +88,7 @@ const products = [
 
 const Product = () => {
   const [activeProduct, setActiveProduct] = useState(products[0]);
+  const [showInquiryPopup, setShowInquiryPopup] = useState(false);
 
   return (
     <>
@@ -215,11 +216,21 @@ const Product = () => {
                 </div>
               </div>
 
-              <button className="catalogBtn">Send Inquiry</button>
+              <button
+  className="catalogBtn"
+  onClick={() => setShowInquiryPopup(true)}
+>
+  Send Inquiry
+</button>
             </div>
           </div>
         </div>
       </section>
+
+      <InquiryPopup
+  isOpen={showInquiryPopup}
+  onClose={() => setShowInquiryPopup(false)}
+/>
     </>
   );
 };
