@@ -1,7 +1,15 @@
 import "./Footer.css";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaEnvelope,
+  FaPhone,
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -134,119 +142,87 @@ const Footer = () => {
 BOTTOM FOOTER
 =========================== */}
 
-      <div className="footer-bottom">
-        <div className="footer-bottom-container">
-          {/* Logo */}
+      <footer className="footerMinimal">
+        <div className="footerMinimalContainer">
+          {/* LEFT */}
 
-          <div className="footer-col footer-brand">
-            <img src={logo} alt="PrimAura Logo" className="bottom-logo" />
-
-            <p>
-              Premium exporter delivering quality products worldwide with
-              trusted sourcing and timely delivery.
-            </p>
-
-            <div className="social-links">
-              <a href="/">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-
-              <a href="/">
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-
-              <a href="/">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-
-              <a href="/">
-                <i className="fa-brands fa-x-twitter"></i>
-              </a>
-            </div>
+          <div className="footerLeft">
+            <img src={logo} alt="PrimAura" className="footerLogo" />
           </div>
 
-          {/* Pages */}
+          {/* CENTER */}
 
-          <div className="footer-col">
-            <h4>Pages</h4>
-
-            <ul>
+          <div className="footerCenter">
+            <ul className="footerMenu">
               <li>
                 <a href="/">Home</a>
               </li>
+
               <li>
-                <a href="/">About Us</a>
+                <a href="/about">About</a>
               </li>
+
               <li>
-                <a href="/">Products</a>
+                <a href="/products">Products</a>
               </li>
+
               <li>
-                <a href="/">Gallery</a>
-              </li>
-              <li>
-                <a href="/">Blogs</a>
-              </li>
-              <li>
-                <a href="/">Contact Us</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
-          </div>
 
-          {/* Products */}
-
-          {/* Newsletter */}
-
-          <div className="footer-col newsletter">
-            <h4>Newsletter</h4>
-
-            <p>Subscribe to receive export updates and latest products.</p>
-
-            <form>
-              <input type="email" placeholder="Your Email" />
-
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-
-          {/* Contact */}
-
-          <div className="footer-col contact-info">
-            <h4>Contact</h4>
-
-            <p>
-              <i className="fa-solid fa-location-dot"></i>
-              &nbsp; Noida, Uttar Pradesh, India
-            </p>
-
-            <p>
-              <i className="fa-solid fa-phone"></i>
-              &nbsp; +91 9876543210
-            </p>
-
-            <p>
-              <i className="fa-solid fa-envelope"></i>
-              &nbsp; info@primaura.com
-            </p>
-
-            <p>
-              <i className="fa-solid fa-envelope"></i>
-              &nbsp; sales@primaura.com
+            <p className="footerCopyright">
+              © 2026 PrimAura. All Rights Reserved.
             </p>
           </div>
-        </div>
 
-        {/* Copyright */}
+          {/* RIGHT */}
 
-        <div className="footer-copyright">
-          <p>© 2026 PrimAura. All Rights Reserved.</p>
+          <div className="footerRight">
+            <div className="footerSocial">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
 
-          <div className="footer-policy">
-            <a href="/">Terms &amp; Conditions</a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
 
-            <a href="/">Privacy Policy</a>
+              <a
+                href="https://wa.me/919876543210"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
+            </div>
+
+            <a href="mailto:info@primaura.com" className="footerEmail">
+              info@primaura.com
+            </a>
           </div>
         </div>
-      </div>
+      </footer>
 
       {/* ===========================
 END
