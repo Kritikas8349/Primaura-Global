@@ -53,7 +53,7 @@ const Contact = () => {
 
               <div>
                 <p>primaura.global@gmail.com</p>
-                <p>founder@primauraglobal.com</p>
+                
               </div>
             </div>
 

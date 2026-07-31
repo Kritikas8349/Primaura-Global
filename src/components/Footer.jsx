@@ -181,7 +181,7 @@ BOTTOM FOOTER
           <div className="footerRight">
             <div className="footerSocial">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/share/1JQFkMjBZi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -190,7 +190,7 @@ BOTTOM FOOTER
               </a>
 
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/primaura_global?igsh=YjE5aXB3MHA2d2t5"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
